@@ -1,0 +1,96 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOg4xtO9yX+xq6JzYCSxqQW",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/venkata-tharun/192210090_B.Venkata-Tharun/blob/main/python%20basics\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hv3EjiTP3HFp",
+        "outputId": "7d9be867-8bf2-440a-9e6a-940487066439"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Slow down\n",
+            "stop\n",
+            "negative\n",
+            "positive\n"
+          ]
+        }
+      ],
+      "source": [
+        "def Trafficadvisor(color: str)->str:\n",
+        "    if color ==\"red\":\n",
+        "      return \"stop\"\n",
+        "    elif color ==\"yellow\":\n",
+        "      return \"Slow down\"\n",
+        "    elif color ==\"green\":\n",
+        "      return \"go\"\n",
+        "    else:\n",
+        "      return \"wait for the response\"\n",
+        "print (Trafficadvisor(\"yellow\"))\n",
+        "\n",
+        "#------------MATCH CASE ------#\n",
+        "def Trafficadvisor(color: str)->str:\n",
+        "  match color:\n",
+        "    case \"red\" :return \"stop\"\n",
+        "    case \"yellow\":return \"slow down\"\n",
+        "    case \"green\" :return \"go\"\n",
+        "    case _: return \"wait for the response\"\n",
+        "print (Trafficadvisor(\"red\"))\n",
+        "\n",
+        "#number sign classifier ----positive,negative,zero#\n",
+        "def numclassifier(num : int)->str:\n",
+        "  if num >0:\n",
+        "    return \"positive\"\n",
+        "  elif num <0:\n",
+        "    return \"negative\"\n",
+        "  else:\n",
+        "    return \"zero\"\n",
+        "print(numclassifier(-25))\n",
+        "\n",
+        "#terinary operator#\n",
+        "def numclassifier(num : int)->str:\n",
+        "  return \"zero\" if num==0 else(\"positive\" if num>0 else \"negative\")\n",
+        "print(numclassifier(25))\n",
+        "\n",
+        "#match case#\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
